@@ -1,0 +1,6 @@
+pandas
+lxml
+nltk
+spacy
+scikit-learn
+jupyter
