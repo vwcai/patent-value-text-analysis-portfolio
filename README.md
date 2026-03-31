@@ -4,9 +4,11 @@ This repository is a public portfolio version of a patent analytics project that
 
 The analysis combines patent-level value estimates from the KPSS dataset with USPTO patent grant abstracts. The notebook filters the sample to 2022 patents, merges firm identifiers, builds a document-term matrix, and measures which words and phrases are most correlated with patent value.
 
+For a concise project overview written for portfolio review, see `PROJECT_SUMMARY.md`.
+
 ## Portfolio Version Note
 
-This public version focuses on methodology, code structure, and selected results. Original course materials, raw datasets, and assignment scaffolding are intentionally omitted.
+This public version focuses on methodology, code structure, and selected results. Original source materials, raw datasets, and classroom-specific scaffolding are intentionally omitted.
 
 ## Highlights
 
@@ -27,6 +29,7 @@ This public version focuses on methodology, code structure, and selected results
 ## Repository Contents
 
 - `patent_value_text_analysis.ipynb`: cleaned notebook with methodology, code, and selected outputs
+- `PROJECT_SUMMARY.md`: concise summary of the business question, analytical approach, and key results
 - `requirements.txt`: Python dependencies used in the analysis
 
 ## Data Note
