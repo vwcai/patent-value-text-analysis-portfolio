@@ -1,5 +1,7 @@
 # Project Summary
 
+This summary presents the business question, analytical approach, and selected findings from the public portfolio version of the project. Supporting source materials and classroom-specific scaffolding are intentionally omitted.
+
 ## Executive Summary
 
 This project analyzes whether patent abstract language contains useful signal about patent value. Using patent-level value estimates from the KPSS dataset and abstract text from USPTO patent grant records, the analysis builds text features and measures how specific words and phrases relate to patent value.

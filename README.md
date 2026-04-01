@@ -2,39 +2,32 @@
 
 This repository is a public portfolio version of a patent analytics project that studies whether vocabulary in patent abstracts is associated with patent value.
 
-The analysis combines patent-level value estimates from the KPSS dataset with USPTO patent grant abstracts. The notebook filters the sample to 2022 patents, merges firm identifiers, builds a document-term matrix, and measures which words and phrases are most correlated with patent value.
+The analysis combines patent-level value estimates with USPTO patent grant abstracts and asks whether text features from abstracts can help explain patent value.
 
-For a concise project overview written for portfolio review, see `PROJECT_SUMMARY.md`.
+## Public Portfolio Note
 
-## Portfolio Version Note
+This repository is a portfolio adaptation of a larger academic analysis. It includes selected code, outputs, and summary materials for portfolio review. Raw source data, classroom-specific scaffolding, and non-essential work products are intentionally omitted, and the repository is not intended as a step-by-step instructional solution.
 
-This public version focuses on methodology, code structure, and selected results. Original source materials, raw datasets, and classroom-specific scaffolding are intentionally omitted.
+## Start Here
 
-## Highlights
+- `PROJECT_SUMMARY.md`: main case-study style overview
+- `patent_value_text_analysis.ipynb`: selected analysis notebook
 
-- Filters KPSS patent value data to patents issued in 2022
-- Merges in firm names from CRSP identifiers
-- Parses USPTO XML records and extracts patent abstracts
-- Builds unigram and bigram text features with `CountVectorizer`
-- Examines the most common terms in patent abstracts
-- Measures term-by-term correlations with `xi_real`
+## At a Glance
 
-## Selected Findings
-
-- Highest average patent value in the 2022 sample: **UNITEDHEALTH GROUP INC**
-- Frequently used abstract terms include `first`, `second`, `device`, `data`, and `system`
-- Stronger positive term correlations include `test`, `processors`, `processes`, and `chip`
-- Negative term correlations are present but much weaker in magnitude
+- Business question: can patent abstract language help explain patent value?
+- Methods: XML parsing, text preprocessing, document-term matrix construction, and term-level correlation analysis
+- Headline takeaway: a small set of more technical terms appears more informative than generic abstract language, but text alone does not fully explain patent value
 
 ## Repository Contents
 
-- `patent_value_text_analysis.ipynb`: cleaned notebook with methodology, code, and selected outputs
-- `PROJECT_SUMMARY.md`: concise summary of the business question, analytical approach, and key results
+- `patent_value_text_analysis.ipynb`: selected notebook with methodology, code, and outputs
+- `PROJECT_SUMMARY.md`: detailed project narrative with business framing, approach, findings, and limitations
 - `requirements.txt`: Python dependencies used in the analysis
 
 ## Data Note
 
-The raw datasets are not included in this repository. The original workflow expects access to:
+The raw datasets are not included in this repository. The underlying workflow depends on:
 
 - `KPSS_2023.csv`
 - `crsp_names.csv`
