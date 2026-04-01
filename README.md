@@ -27,11 +27,7 @@ This repository is a portfolio adaptation of a larger academic analysis. It incl
 
 ## Data Note
 
-The raw datasets are not included in this repository. The underlying workflow depends on:
-
-- `KPSS_2023.csv`
-- `crsp_names.csv`
-- `ipg221213.zip`
+The raw datasets are not included in this repository. The underlying workflow combines patent value estimates, firm-name mapping data, and USPTO patent grant XML files containing abstract text.
 
 ## Local Reproduction
 
